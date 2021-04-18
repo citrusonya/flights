@@ -9,7 +9,7 @@
 <script defer="defer" src="vendors-node_modules_babel_polyfill_lib_index_js.js"></script><script defer="defer" src="main.js"></script><link href="main.css" rel="stylesheet"></head>
 <body>
     <div class="wrapper" id="filters">
-        <div id="sort">
+        <div id="sortPrice">
             <p class="label">Сортировать</p>
             <label class="btn__sort"><input type="radio" name="sort" id="price_up"><span></span>- по возврастанию цены</label>
             <label class="btn__sort"><input type="radio" name="sort" id="price_down"><span></span>- по убыванию цены</label>
@@ -17,18 +17,18 @@
         </div>
         <div id="filter">
             <p class="label">Фильтровать</p>
-            <label class="btn__filter"><input type="radio" name="filter" value="connecting"><span></span>- 1 пересадка</label>
-            <label class="btn__filter"><input type="radio" name="filter" value="dirrect"><span></span>- без пересадок</label>
+            <label class="btn__filter"><input type="radio" name="filter" id="connecting" value="2"><span></span>- 1 пересадка</label>
+            <label class="btn__filter"><input type="radio" name="filter" id="dirrect" value="1"><span></span>- без пересадок</label>
         </div>
         <div id="price">
             <p class="label">Цена</p>
             <label>От <input type="number" placeholder="0" min="0" max="10000" id="price-min" value=""></label>
-            <label>До <input type="number" placeholder="10000" min="0" max="10000" id="price-max" value=""></label>
+            <label>До <input type="number" placeholder="100000" min="0" max="100000" id="price-max" value=""></label>
         </div>
         <div id="carrier">
             <p class="label">Авиакомпании</p>
-            <label><input type="checkbox" value="LOT Polish Airlines">LOT Polish Airlines</label>
-            <label><input type="checkbox" value="Аэрофлот - российские авиалинии">Аэрофлот - российские авиалинии</label>
+            <label><input type="checkbox" name="airline" id="getPolishAirline" value="LOT Polish Airlines">LOT Polish Airlines</label>
+            <label><input type="checkbox" name="airline" id="getRussianAirline" value="Аэрофлот - российские авиалинии">Аэрофлот - российские авиалинии</label>
         </div>
     </div>
     <div class="wrapper" id="result">
