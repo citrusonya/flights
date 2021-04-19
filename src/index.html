@@ -22,16 +22,25 @@
         </div>
         <div id="price">
             <p class='label'>Цена</p>
-            <label>От <input type="number" placeholder="0" min="0" max="10000" id="price-min" value=""></label>
-            <label>До <input type="number" placeholder="100000" min="0" max="100000" id="price-max" value=""></label>
+            <label>От <input type="number" placeholder="0" id="price_min" value=""></label>
+            <label>До <input type="number" placeholder="100000" id="price_max" value=""></label>
         </div>
         <div id="carrier">
             <p class='label'>Авиакомпании</p>
-            <label><input type="checkbox" name="airline" id="getPolishAirline" value="LOT Polish Airlines">LOT Polish Airlines</label>
-            <label><input type="checkbox" name="airline" id="getRussianAirline" value="Аэрофлот - российские авиалинии">Аэрофлот - российские авиалинии</label>
+            <label class="btn__filter">
+                <input type="checkbox" name="airline" id="getPolishAirline" value="LOT Polish Airlines">
+                <span></span><div>- LOT Polish Airlines</div>
+                <p id="min_price_Polish"></p>
+            </label>
+            <label class="btn__filter">
+                <input type="checkbox" name="airline" id="getRussianAirline" value="Аэрофлот - российские авиалинии">
+                <span></span><div>- Аэрофлот - российские авиалинии</div>
+                <p id="min_price_Aeroflot"></p>
+            </label>
         </div>
     </div>
     <div class="wrapper" id="result">
+        <div id="transfer_on"></div>
         <button>Показать еще</button>
     </div>
 </body>
