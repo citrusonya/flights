@@ -10,7 +10,7 @@
 
 :recycle: Filter by price range
 
-:recycle: Filter by airline
+:heavy_check_mark: Filter by airline
 
 ## Note
 The work on creating filtration is ongoing and will be completed in the coming days.
