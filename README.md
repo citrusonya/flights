@@ -2,6 +2,8 @@
 - Written in JavaScript
 - Compiled with Webpack
 
+![screenshot](https://github.com/citrusonya/flights/blob/main/screenshot.png)
+
 :heavy_check_mark: Sort tickets by price
 
 :recycle: Sort tickets by flight time
