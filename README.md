@@ -1,6 +1,6 @@
 # Flight Search Results Page
 
-![screenshot](https://github.com/citrusonya/flights/blob/master/screenshot.png)
+![screenshot](https://github.com/citrusonya/flights/blob/master/gif.gif)
 ____
 
 :ticket: Sort tickets by price
