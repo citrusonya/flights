@@ -1,6 +1,7 @@
 # Flight Search Results Page
 
 ![screenshot](https://github.com/citrusonya/flights/blob/main/screenshot.png)
+____
 
 :ticket: Sort tickets by price
 
@@ -11,6 +12,7 @@
 :moneybag: Filter by price range
 
 :airplane: Filter by airline
+____
 
 ## Getting Started
 ```
@@ -32,6 +34,6 @@ Create production build (with file minification)
 npm run prod
 ```
 ## Important
-If Hot Reloading does not work, check ```webpack``` and ```webpack-dev-server version```. 
+If Hot Reloading does not work, check ```webpack``` and ```webpack-dev-server``` version. 
 
-In my case, works bundle: ```webpack: 5.23.0``` with ```webpack-dev-server: 4.0.0-beta.0```
+In my case, works bundle: ```webpack: 5.23.0``` with ```webpack-dev-server: 4.0.0-beta.0```.
