@@ -21,15 +21,15 @@ git clone https://github.com/citrusonya/flights.git
 ## Scripts
 Make sure you have Webpack installed.
 
-Run the app in Hot Reloading mode
+### Run the app in Hot Reloading mode
 ```
 npm start
 ```
-Create development build
+### Create development build
 ```
 npm run dev
 ```
-Create production build (with file minification)
+### Create production build (with file minification)
 ```
 npm run prod
 ```
