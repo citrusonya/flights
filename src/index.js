@@ -88,10 +88,18 @@ function dirrectFlight() {
         document.querySelectorAll('#transfer').forEach((v) => {
 
             if (v.innerHTML === "<div>1 пересадка</div>") v.parentNode.className += " inactive";
-        })
+        });
     };
 
-    if (connecting.checked) polishAirline.disabled = false;
+    if (connecting.checked) {
+        polishAirline.disabled = false;
+
+        document.querySelectorAll('#transfer').forEach((v) => {
+
+            if (v.innerHTML === "") v.parentNode.className += " inactive";
+        });
+    };
+
     if (polishAirline.checked) dirrect.disabled = true;
     if (!polishAirline.checked) dirrect.disabled = false;
     if (polishAirline.checked && russianAirline.checked) dirrect.disabled = false;
@@ -99,7 +107,7 @@ function dirrectFlight() {
 
 function getMinPrice(array, value, output){
     const sort = array.filter(v => v.flight.carrier.caption === value)
-                        .map(value => value.flight.price.total.amount);
+                      .map(value => value.flight.price.total.amount);
 
     const sortConvert = sort.map(v => parseInt(v)),
         min = Math.min.apply(null, sortConvert);
