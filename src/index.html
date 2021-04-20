@@ -4,44 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flights</title>
     <link rel="icon" href="favicon.ico" type="image/ico">
 </head>
 <body>
-    <div class="wrapper" id="filters">
-        <div id="sortPrice">
-            <p class='label'>Сортировать</p>
-            <label class="btn__sort"><input type="radio" name="sort" id="price_up"><span></span>- по возврастанию цены</label>
-            <label class="btn__sort"><input type="radio" name="sort" id="price_down"><span></span>- по убыванию цены</label>
-            <label class="btn__sort"><input type="radio" name="sort" id="time"><span></span>- по времени в пути</label>
+    <div class="wrapper">
+        <div class="container" id="filters">
+            <div id="sort">
+                <p class='label'>Сортировать</p>
+                <label class="btn__sort"><input type="radio" name="sort" id="price_up"><span></span>- по возврастанию цены</label>
+                <label class="btn__sort"><input type="radio" name="sort" id="price_down"><span></span>- по убыванию цены</label>
+                <label class="btn__sort"><input type="radio" name="sort" id="time"><span></span>- по времени в пути</label>
+            </div>
+            <div id="filter">
+                <p class='label'>Фильтровать</p>
+                <label class="btn__filter"><input type="radio" name="filter" id="connecting" value="2"><span></span>- 1 пересадка</label>
+                <label class="btn__filter"><input type="radio" name="filter" id="dirrect" value="1" ><span></span>- без пересадок</label>
+            </div>
+            <div id="price">
+                <p class='label'>Цена</p>
+                <label>От <input type="number" placeholder="0" id="price_min" value=""></label>
+                <label>До <input type="number" placeholder="100000" id="price_max" value=""></label>
+            </div>
+            <div id="carrier">
+                <p class='label'>Авиакомпании</p>
+                <label class="btn__filter">
+                    <input type="checkbox" name="airline" value="LOT Polish Airlines">
+                    <span></span><div>- LOT Polish Airlines</div>
+                    <p id="minPricePolish"></p>
+                </label>
+                <label class="btn__filter">
+                    <input type="checkbox" name="airline" value="Аэрофлот - российские авиалинии">
+                    <span></span><div>- Аэрофлот - российские авиалинии</div>
+                    <p id="minPriceAeroflot"></p>
+                </label>
+            </div>
         </div>
-        <div id="filter">
-            <p class='label'>Фильтровать</p>
-            <label class="btn__filter"><input type="radio" name="filter" id="connecting" value="2"><span></span>- 1 пересадка</label>
-            <label class="btn__filter"><input type="radio" name="filter" id="dirrect" value="1" ><span></span>- без пересадок</label>
-        </div>
-        <div id="price">
-            <p class='label'>Цена</p>
-            <label>От <input type="number" placeholder="0" id="price_min" value=""></label>
-            <label>До <input type="number" placeholder="100000" id="price_max" value=""></label>
-        </div>
-        <div id="carrier">
-            <p class='label'>Авиакомпании</p>
-            <label class="btn__filter">
-                <input type="checkbox" name="airline" id="getPolishAirline" value="LOT Polish Airlines">
-                <span></span><div>- LOT Polish Airlines</div>
-                <p id="min_price_Polish"></p>
-            </label>
-            <label class="btn__filter">
-                <input type="checkbox" name="airline" id="getRussianAirline" value="Аэрофлот - российские авиалинии">
-                <span></span><div>- Аэрофлот - российские авиалинии</div>
-                <p id="min_price_Aeroflot"></p>
-            </label>
-        </div>
+        <div class="container" id="result"></div>
     </div>
-    <div class="wrapper" id="result">
-        <div id="transfer_on"></div>
-        <button>Показать еще</button>
+    <div class="wrapper">
+        <button id="loadMore">Показать еще</button>
     </div>
 </body>
 </html>
