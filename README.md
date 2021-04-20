@@ -1,18 +1,39 @@
-# Flight search results page
-- Written in JavaScript
-- Compiled with Webpack
+# Flight Search Results Page
 
 ![screenshot](https://github.com/citrusonya/flights/blob/main/screenshot.png)
+____
 
-:heavy_check_mark: Sort tickets by price
+:ticket: Sort tickets by price
 
-:recycle: Sort tickets by flight time
+:clock5: Sort tickets by flight time
 
-:heavy_check_mark: Filtering by the presence of a connection between flights
+:running: Filtering by the presence of a connection between flights
 
-:heavy_check_mark: Filter by price range
+:moneybag: Filter by price range
 
-:heavy_check_mark: Filter by airline
+:airplane: Filter by airline
+____
 
-## Note
-The work on creating filtration is ongoing and will be completed in the coming days.
+## Getting Started
+```
+git clone https://github.com/citrusonya/flights.git
+```
+## Scripts
+Make sure you have Webpack installed.
+
+### Run the app in Hot Reloading mode
+```
+npm start
+```
+### Create development build
+```
+npm run dev
+```
+### Create production build (with file minification)
+```
+npm run prod
+```
+## Important
+If Hot Reloading does not work, check ```webpack``` and ```webpack-dev-server``` version. 
+
+In my case, works bundle: ```webpack: 5.23.0``` with ```webpack-dev-server: 4.0.0-beta.0```.
