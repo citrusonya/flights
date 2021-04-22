@@ -2,6 +2,8 @@
 
 ![screenshot](https://github.com/citrusonya/flights/blob/master/gif.gif)
 ____
+| [Demo](https://citrusonya.github.io/flights/) |
+|:---------:|
 
 :ticket: Sort tickets by price
 
