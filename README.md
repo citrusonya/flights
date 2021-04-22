@@ -31,7 +31,7 @@ npm run dev
 ```
 ### Create production build (with file minification)
 ```
-npm run prod
+npm run build
 ```
 ## Important
 If Hot Reloading does not work, check ```webpack``` and ```webpack-dev-server``` version. 
